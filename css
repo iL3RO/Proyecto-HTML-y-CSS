@@ -1,0 +1,26 @@
+
+.navbar-brand, .nav-link, h1, h2, h3 {
+    color: #e74c3c !important; /* Rojo español */
+}
+
+.btn.custom-btn {
+    background-color: #f1c40f; /* Amarillo español */
+    color: #fff;
+}
+
+.btn.custom-btn:hover {
+    background-color: #d4ac0d;
+}
+
+/* Ajuste de fuentes para móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
