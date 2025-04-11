@@ -108,11 +108,15 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="membership-form webform" role="form">
-                        <input type="text" class="form-control" name="cf-name" placeholder="Pepe García">
-                        <input type="email" class="form-control" name="cf-email" placeholder="hola@gmail.com">
-                        <input type="tel" class="form-control" name="cf-phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                        <textarea class="form-control" rows="3" name="cf-message" placeholder="Que te quieres apuntar conchi?"></textarea>
+                    <form class="membership-form webform">
+                        <label for="cf-name">Nombre:</label>
+                        <input type="text" class="form-control" id="cf-name" name="cf-name" placeholder="Pepe García">
+                        <label for="cf-email">Correo:</label>
+                        <input type="email" class="form-control" id="cf-email" name="cf-email" placeholder="pepe@gymbro.es">
+                        <label for="cf-phone">Teléfono:</label>
+                        <input type="tel" class="form-control" id="cf-phone" name="cf-phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <label for="cf-message">Mensaje:</label>
+                        <textarea class="form-control" rows="3" id="cf-message" name="cf-message" placeholder="Cuéntanos tus metas"></textarea>
                         <button type="submit" class="form-control" id="submit-button" name="submit">Enviar</button>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="signup-agree">
