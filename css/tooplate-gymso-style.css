@@ -1,44 +1,38 @@
-/*
 
-Tooplate 2119 Gymso Fitness
+@font-face {
+    font-family: 'Plain';
+    src: url('../fonts/Plain-Regular.woff2') format('woff2'),
+         url('../fonts/Plain-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-https://www.tooplate.com/view/2119-gymso-fitness
+@font-face {
+    font-family: 'Plain';
+    src: url('../fonts/Plain-Light.woff2') format('woff2'),
+         url('../fonts/Plain-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
 
-*/
+@font-face {
+    font-family: 'Plain';
+    src: url('../fonts/Plain-Bold.woff2') format('woff2'),
+         url('../fonts/Plain-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 
-  @font-face {
-      font-family: 'Plain';
-      src: url('../fonts/Plain-Regular.woff2') format('woff2'),
-          url('../fonts/Plain-Regular.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-  }
-
-  @font-face {
-      font-family: 'Plain';
-      src: url('../fonts/Plain-Light.woff2') format('woff2'),
-          url('../fonts/Plain-Light.woff') format('woff');
-      font-weight: 300;
-      font-style: normal;
-  }
-
-  @font-face {
-      font-family: 'Plain';
-      src: url('../fonts/Plain-Bold.woff2') format('woff2'),
-          url('../fonts/Plain-Bold.woff') format('woff');
-      font-weight: bold;
-      font-style: normal;
-  }
-
-  :root {
-    --primary-color:        #f13a11;
+:root {
+    --primary-color:        #e63946; /* Cambiado a un rojo más vibrante */
+    --secondary-color:      #1d3557; /* Nuevo color secundario para contraste */
     --white-color:          #ffffff;
     --dark-color:           #171819;
-    --about-bg-color:       #f9f9f9;
+    --about-bg-color:       #f1f5f9; /* Fondo más claro para la sección about */
 
-    --gray-color:           #909090;
-    --link-color:           #404040;
-    --p-color:              #666262;
+    --gray-color:           #6b7280; /* Gris más moderno */
+    --link-color:           #2d3748;
+    --p-color:              #4b5563;
 
     --base-font-family:     'Plain', sans-serif;
     --font-weight-bold:     bold;
@@ -46,171 +40,145 @@ https://www.tooplate.com/view/2119-gymso-fitness
     --font-weight-light:    300;
     --font-weight-thin:     100;
 
-    --h1-font-size:         48px;
-    --h2-font-size:         36px;
-    --h3-font-size:         28px;
-    --h4-font-size:         24px;
-    --h5-font-size:         22px;
-    --h6-font-size:         22px;
+    --h1-font-size:         54px; /* Aumentado para mayor impacto */
+    --h2-font-size:         40px;
+    --h3-font-size:         30px;
+    --h4-font-size:         26px;
+    --h5-font-size:         24px;
+    --h6-font-size:         20px;
     --p-font-size:          18px;
     --base-font-size:       16px;
-    --menu-font-size:       14px;
+    --menu-font-size:       15px; /* Ligeramente más grande para el menú */
+}
 
-    --border-radius-large:  100%;
-    --border-radius-small:  2px;
-  }
-
-
-  body {
+body {
     background: var(--white-color);
     font-family: var(--base-font-family);
-  }
+}
 
+/*---------------------------------------
+   TYPOGRAPHY              
+-----------------------------------------*/
 
-  /*---------------------------------------
-     TYPOGRAPHY              
-  -----------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-normal); /* Ajustado para mejor legibilidad */
+    line-height: 1.2; /* Espaciado más natural */
+}
 
-  h1,h2,h3,h4,h5,h6 {
-    font-weight: var(--font-weight-thin);
-    line-height: normal;
-  }
-
-  h1 {
+h1 {
     font-size: var(--h1-font-size);
     font-weight: var(--font-weight-bold);
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
     text-transform: uppercase;
-    margin: 20px 0;
-  }
+    margin: 30px 0; /* Más espacio */
+}
 
-  h2 {
+h2 {
     font-size: var(--h2-font-size);
     font-weight: var(--font-weight-bold);
-    letter-spacing: -2px;
-  }
+    letter-spacing: -1px;
+}
 
-  h3 {
+h3 {
     font-size: var(--h3-font-size);
     font-weight: var(--font-weight-bold);
-    letter-spacing: -1px;
-    margin: 0;
-  }
+    letter-spacing: -0.5px;
+    margin: 10px 0;
+}
 
-  h4 {
+h4 {
     font-size: var(--h4-font-size);
-  }
+}
 
-  h5 {
+h5 {
     font-size: var(--h5-font-size);
-  }
+}
 
-  h6 {
+h6 {
     color: var(--gray-color);
     font-size: var(--h6-font-size);
-    line-height: inherit;
-    margin: 0;
-  }
+    margin: 10px 0;
+}
 
-  p {
+p {
     color: var(--p-color);
     font-size: var(--p-font-size);
     font-weight: var(--font-weight-light);
-    line-height: 1.5em;
-  }
+    line-height: 1.7; /* Más espacio para mejor lectura */
+}
 
-  b, 
-  strong {
+b, 
+strong {
     font-weight: var(--font-weight-bold);
-    letter-spacing: 0;
-  }
+}
 
-  .section {
-    padding: 7rem 0;
-  }
+.section {
+    padding: 8rem 0; /* Más padding para secciones */
+}
 
+/* BUTTON */
 
-  /* BUTTON */
-
-  .custom-btn {
-    background: transparent;
-    border-radius: var(--border-radius-small);
-    padding: 14px 24px;
+.custom-btn {
+    background: var(--primary-color);
+    border-radius: 4px; /* Bordes más suaves */
+    padding: 12px 28px; /* Botones más amplios */
     color: var(--white-color);
     font-size: var(--menu-font-size);
-    font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     white-space: nowrap;
     transition: all 0.3s ease;
-  }
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
 
-  .custom-btn:hover {
+.custom-btn:hover {
+    background: var(--secondary-color); /* Cambia al color secundario */
+    color: var(--white-color);
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.custom-btn:focus {
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.3); /* Resplandor al enfocar */
+}
+
+.custom-btn.bordered {
+    background: transparent;
+    border: 2px solid var(--primary-color);
     color: var(--primary-color);
-  }
-
-  .custom-btn:focus {
     box-shadow: none;
-  }
+}
 
-  .custom-btn.bordered:hover,
-  .custom-btn.bordered:focus,
-
-  .custom-btn.bg-color:hover,
-  .custom-btn.bg-color:focus {
-    background: var(--white-color);
-    border-color: transparent;
-    color: var(--primary-color);
-  }
-
-  .bordered {
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-  }
-
-  .bg-color {
+.custom-btn.bordered:hover {
     background: var(--primary-color);
     color: var(--white-color);
-  }
+    border-color: var(--primary-color);
+}
 
+/*---------------------------------------
+   GENERAL               
+-----------------------------------------*/
 
-
-  /*---------------------------------------
-     GENERAL               
-  -----------------------------------------*/
-
-  * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+* {
     box-sizing: border-box;
-  }
+}
 
-  *::before,
-  *::after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  a {
+a {
     color: var(--link-color);
-    font-weight: normal;
+    font-weight: var(--font-weight-normal);
     text-decoration: none;
     transition: all 0.3s ease;
-  }
+}
 
-  a:hover, 
-  a:active, 
-  a:focus {
+a:hover, 
+a:active, 
+a:focus {
     color: var(--primary-color);
-    outline: none;
-    text-decoration: none;
-  }
+}
 
+/* BG OVERLAY */
 
-  /* BG OVERLAY */
-
-  .bg-overlay {
+.bg-overlay {
     background: var(--dark-color);
     position: absolute;
     top: 0;
@@ -219,451 +187,216 @@ https://www.tooplate.com/view/2119-gymso-fitness
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.85;
-  }
+    opacity: 0.7; /* Menos opacidad para más visibilidad */
+}
 
+/*---------------------------------------
+   MODAL              
+-----------------------------------------*/
 
-  /*---------------------------------------
-     MODAL              
-  -----------------------------------------*/
+.modal-content {
+    padding: 2.5rem 3.5rem;
+    border-radius: 8px; /* Bordes más redondeados */
+}
 
-  .modal-content {
-    padding: 2rem 3rem;
-  }
+/*---------------------------------------
+   FEATURE          
+-----------------------------------------*/
 
-  .modal-header,
-  .modal-body,
-  .modal-footer {
-    border: 0;
-    padding: 0;
-  }
+.feature {
+    background: var(--secondary-color); /* Color secundario para contraste */
+    padding: 6rem 0;
+}
 
-  .membership-form a {
-    color: var(--primary-color);
-  }
+/*---------------------------------------
+   MENU             
+-----------------------------------------*/
 
+.navbar {
+    background: linear-gradient(180deg, var(--dark-color), var(--secondary-color)); /* Degradado moderno */
+    padding: 1.5rem;
+}
 
-  /*---------------------------------------
-    FEATURE          
-  -----------------------------------------*/
-
-  .feature {
-    background: var(--dark-color);
-    padding: 5rem 0;
-  }
-
-
-  /*---------------------------------------
-     MENU             
-  -----------------------------------------*/
-
-  .navbar {
-    background: var(--dark-color);
-    padding: 1rem;
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-  }
-
-  .navbar-brand {
+.navbar-brand {
     color: var(--white-color);
     font-size: var(--h3-font-size);
     font-weight: var(--font-weight-bold);
-    line-height: normal;
-    padding-top: 0;
-  }
+}
 
-  .nav-item .nav-link {
-    display: block;
+.nav-item .nav-link {
     color: var(--white-color);
     font-size: var(--menu-font-size);
     font-weight: var(--font-weight-normal);
     text-transform: uppercase;
-    padding: 2px 6px;
-  }
+    padding: 4px 10px;
+}
 
-  .nav-item .nav-link.active,
-  .nav-item .nav-link:hover {
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
     color: var(--primary-color);
-  }
+}
 
-  .navbar .social-icon li a {
-    color: var(--white-color);
-  }
-
-  .navbar-toggler {
-    border: 0;
-    padding: 0;
-    cursor: pointer;
-    margin: 0 10px 0 0;
-    width: 30px;
-    height: 35px;
-    outline: none;
-  }
-
-  .navbar-toggler:focus {
-    outline: none;
-  }
-
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-    background: transparent;
-  }
-
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
-    transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
-    transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-    transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
-    top: 0;
-  }
-
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
-    transform: rotate(45deg);
-  }
-
-  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
-    transform: rotate(-45deg);
-  }
-
-  .navbar-toggler .navbar-toggler-icon {
+.navbar-toggler .navbar-toggler-icon {
     background: var(--primary-color);
-    transition: background 10ms 300ms ease;
-    display: block;
-    width: 30px;
-    height: 2px;
-    position: relative;
-  }
+    width: 35px;
+    height: 3px;
+}
 
-  .navbar-toggler .navbar-toggler-icon::before,
-  .navbar-toggler .navbar-toggler-icon::after {
-    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
-    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
-    position: absolute;
-    right: 0;
-    left: 0;
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
     background: var(--primary-color);
-    width: 30px;
-    height: 2px;
-    content: '';
-  }
+    width: 35px;
+    height: 3px;
+}
 
-  .navbar-toggler .navbar-toggler-icon::before {
-    top: -8px;
-  }
+/*---------------------------------------
+   HERO              
+-----------------------------------------*/
 
-  .navbar-toggler .navbar-toggler-icon::after {
-    top: 8px;
-  }
-
-  /*---------------------------------------
-     HERO              
-  -----------------------------------------*/
-
-  .hero {
+.hero {
     background-image: url('../images/hero-bg.jpg');
     background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    vertical-align: middle;
+    background-position: center;
     min-height: 100vh;
     position: relative;
-  }
+}
 
+/*---------------------------------------
+   CLASS               
+-----------------------------------------*/
 
-  /*---------------------------------------
-     CLASS               
-  -----------------------------------------*/
-
-  .class-info {
+.class-info {
     background: var(--white-color);
-    box-shadow: 6px 0 38px rgba(20,20,20,0.10);
-    border-radius: 0 0 2px 2px;
-    padding: 1rem 2rem;
-    position: relative;
-  }
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    border-radius: 4px;
+    padding: 1.5rem 2.5rem;
+}
 
-  .class-info img {
-    border-radius: 2px 2px 0 0;
-  }
+.class-info img {
+    border-radius: 4px 4px 0 0;
+}
 
-  .class-info strong {
-    color: var(--gray-color);
-  }
-
-  .class-price {
-    background: var(--primary-color);
-    border-radius: var(--border-radius-large);
+.class-price {
+    background: var(--secondary-color); /* Color secundario */
+    border-radius: 50%;
     color: var(--white-color);
     font-weight: var(--font-weight-bold);
-    display: block;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    line-height: 3.5rem;
-    text-align: center;
-  }
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    top: 1.5rem;
+    right: 1.5rem;
+}
 
+/*---------------------------------------
+   SCHEDULE             
+-----------------------------------------*/
 
-  /*---------------------------------------
-     SCHEDULE             
-  -----------------------------------------*/
-
-  .schedule {
+.schedule {
     background: var(--dark-color);
-  }
+}
 
-  .schedule-table {
-    display: table;
-    border: 0;
-    text-align: center;
-  }
-
-  .schedule-table strong,
-  .schedule-table span {
-    display: block;
-    text-align: center;
-  }
-
-  .schedule-table strong {
+.schedule-table strong {
     color: var(--white-color);
-  }
+}
 
-  .schedule-table span {
+.schedule-table span {
     color: var(--gray-color);
-  }
+}
 
-  .schedule-table span,
-  .schedule-table small {
-    font-size: var(--menu-font-size);
-    text-transform: uppercase;
-  }
-
-  .schedule-table small {
-    position: relative;
-    top: 10px;
-  }
-
-  .table .thead-light th,
-  .schedule-table tr td:first-child {
+.table .thead-light th,
+.schedule-table tr td:first-child {
     background: var(--primary-color);
-    border: 1px solid #212122;
+    border: 1px solid var(--dark-color);
     color: var(--white-color);
-  }
+}
 
-  .schedule-table .thead-light th {
-    border-bottom: 0;
-    text-transform: uppercase;
-  }
+/*---------------------------------------
+   ABOUT & TEAM            
+-----------------------------------------*/
 
-  .table-bordered td, 
-  .table-bordered th {
-    border: 1px solid #212122;
-  }
-
-  .table-bordered td {
-    padding-bottom: 22px;
-  }
-
-  .table td, .table th {
-    padding: 1rem;
-  }
-
-
-  /*---------------------------------------
-      ABOUT & TEAM            
-  -----------------------------------------*/
-
-  .about {
+.about {
     background: var(--about-bg-color);
-  }
+}
 
-  .about-working-hours {
-    border-left: 2px solid;
-    padding-left: 3.5rem;
-  }
-
-  .about-working-hours strong {
-    color: var(--white-color);
-    opacity: 0.85;
-  }
-
-  .team-thumb {
-    position: relative;
-  }
-
-  .team-info {
+.team-info {
     background: var(--white-color);
-    border-radius: 0 0 2px 2px;
-    box-shadow: 6px 0 38px rgba(20,20,20,0.10);
-    padding: 20px;
-    position: relative;
-  }
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+}
 
-  .team-info span {
-    font-weight: var(--font-weight-light);
-    opacity: 0.85;
-  }
+/*---------------------------------------
+   CONTACT              
+-----------------------------------------*/
 
-  .team-info .social-icon {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
+.form-control {
+    border-radius: 4px;
+    margin: 1.5rem 0;
+}
 
-  .team-info .social-icon li {
-    display: block;
-  }
-
-
-  /*---------------------------------------
-     CONTACT              
-  -----------------------------------------*/
-
-  .webform input,
-  button#submit-button {
-    height: calc(2.25rem + 20px);
-  }
-
-  .form-control {
-    border-radius: var(--border-radius-small);
-    margin: 1.3rem 0;
-  }
-
-  .form-control:focus {
-    box-shadow: none;
-    border-color: var(--dark-color);
-  }
-
-  button#submit-button {
-    background: var(--dark-color);
-    border-color: transparent;
-    color: var(--white-color);
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  button#submit-button:hover {
+button#submit-button {
     background: var(--primary-color);
-  }
-
-  .contact h2 + p {
-    max-width: 90%;
-  }
-
-  .google-map {
-    border-top: 1px solid #efebeb;
-    margin-top: 2.5rem;
-    padding-top: 2.5rem;
-  }
-
-  .google-map iframe {
-    width: 100%;
-  }
-
-
-  /*---------------------------------------
-     FOOTER              
-  -----------------------------------------*/
-
-  .site-footer {
-    border-top: 1px solid #efebeb;
-    padding: 3rem 0;
-  }
-
-  .site-footer a {
-    color: var(--p-color);
-    font-weight: var(--font-weight-light);
-  }
-
-  .site-footer p {
-    font-size: var(--base-font-size);
-  }
-
-  .contact .fa,
-  .site-footer .fa {
-    color: var(--primary-color);
-  }
-
-
-  /*---------------------------------------
-     SOCIAL ICON              
-  -----------------------------------------*/
-
-  .social-icon {
-    position: relative;
-    padding: 0;
-    margin: 5px 0 0 0;
-  }
-
-  .social-icon li {
-    display: inline-block;
-    list-style: none;
-  }
-
-  .social-icon li a {
-    text-decoration: none;
-    display: inline-block;
-    color: var(--p-color);
-    font-size: var(--p-font-size);
+    border-radius: 4px;
+    color: var(--white-color);
     font-weight: var(--font-weight-bold);
-    margin: 5px 10px;
-    text-align: center;
-  }
+}
 
-  .social-icon li a:hover {
+button#submit-button:hover {
+    background: var(--secondary-color);
+}
+
+/*---------------------------------------
+   FOOTER              
+-----------------------------------------*/
+
+.site-footer {
+    border-top: 1px solid #e5e7eb;
+    padding: 4rem 0;
+}
+
+/*---------------------------------------
+   SOCIAL ICON              
+-----------------------------------------*/
+
+.social-icon li a {
+    color: var(--p-color);
+    font-size: 20px; /* Iconos más grandes */
+    margin: 8px 12px;
+}
+
+.social-icon li a:hover {
     color: var(--primary-color);
-  }
+}
 
+/*---------------------------------------
+   RESPONSIVE STYLES              
+-----------------------------------------*/
 
-  /*---------------------------------------
-     RESPONSIVE STYLES              
-  -----------------------------------------*/
-
-  @media screen and (max-width: 992px) {
-
+@media screen and (max-width: 992px) {
     .section {
-      padding: 5rem 0;
+        padding: 6rem 0;
     }
 
     .nav-item .nav-link {
-      padding: 6px;
-    }
-
-    .navbar .social-icon {
-      margin-top: 22px;
-    }
-
-    .navbar-collapse,
-    .site-footer {
-      text-align: center;
-    }
-
-    .schedule-table {
-      display: block;
+        padding: 8px;
     }
 
     .modal-content {
-      padding: 2rem;
+        padding: 1.5rem;
     }
-  }
+}
 
-  @media screen and (max-width: 767px) {
-
+@media screen and (max-width: 767px) {
     h1 {
-      font-size: 38px;
+        font-size: 42px;
     }
 
-    .about-working-hours {
-      border-left: 0;
-      padding: 22px 0 0 0;
+    h2 {
+        font-size: 34px;
     }
 
-    .contact h2 span {
-      display: block;
+    .section {
+        padding: 4rem 0;
     }
-  }
+}
