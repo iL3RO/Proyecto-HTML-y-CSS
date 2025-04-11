@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Plain';
     src: url('../fonts/Plain-Regular.woff2') format('woff2'),
@@ -24,15 +23,15 @@
 }
 
 :root {
-    --primary-color:        #e63946; /* Cambiado a un rojo más vibrante */
-    --secondary-color:      #1d3557; /* Nuevo color secundario para contraste */
+    --primary-color:        #d32f2f;
+    --secondary-color:      #f4a261;
     --white-color:          #ffffff;
-    --dark-color:           #171819;
-    --about-bg-color:       #f1f5f9; /* Fondo más claro para la sección about */
+    --dark-color:           #1a1a1a;
+    --about-bg-color:       #fafafa;
 
-    --gray-color:           #6b7280; /* Gris más moderno */
-    --link-color:           #2d3748;
-    --p-color:              #4b5563;
+    --gray-color:           #757575;
+    --link-color:           #333333;
+    --p-color:              #5c5c5c;
 
     --base-font-family:     'Plain', sans-serif;
     --font-weight-bold:     bold;
@@ -40,15 +39,18 @@
     --font-weight-light:    300;
     --font-weight-thin:     100;
 
-    --h1-font-size:         54px; /* Aumentado para mayor impacto */
-    --h2-font-size:         40px;
-    --h3-font-size:         30px;
-    --h4-font-size:         26px;
-    --h5-font-size:         24px;
-    --h6-font-size:         20px;
-    --p-font-size:          18px;
-    --base-font-size:       16px;
-    --menu-font-size:       15px; /* Ligeramente más grande para el menú */
+    --h1-font-size:         48px;
+    --h2-font-size:         34px;
+    --h3-font-size:         28px;
+    --h4-font-size:         24px;
+    --h5-font-size:         20px;
+    --h6-font-size:         18px;
+    --p-font-size:          16px;
+    --base-font-size:       15px;
+    --menu-font-size:       13px;
+
+    --border-radius-large:  50%;
+    --border-radius-small:  4px;
 }
 
 body {
@@ -56,34 +58,29 @@ body {
     font-family: var(--base-font-family);
 }
 
-/*---------------------------------------
-   TYPOGRAPHY              
------------------------------------------*/
-
 h1, h2, h3, h4, h5, h6 {
-    font-weight: var(--font-weight-normal); /* Ajustado para mejor legibilidad */
-    line-height: 1.2; /* Espaciado más natural */
+    font-weight: var(--font-weight-normal);
+    line-height: 1.3;
 }
 
 h1 {
     font-size: var(--h1-font-size);
     font-weight: var(--font-weight-bold);
-    letter-spacing: -1.5px;
+    letter-spacing: -1px;
     text-transform: uppercase;
-    margin: 30px 0; /* Más espacio */
+    margin: 20px 0;
 }
 
 h2 {
     font-size: var(--h2-font-size);
     font-weight: var(--font-weight-bold);
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 h3 {
     font-size: var(--h3-font-size);
     font-weight: var(--font-weight-bold);
-    letter-spacing: -0.5px;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 h4 {
@@ -97,14 +94,14 @@ h5 {
 h6 {
     color: var(--gray-color);
     font-size: var(--h6-font-size);
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 p {
     color: var(--p-color);
     font-size: var(--p-font-size);
     font-weight: var(--font-weight-light);
-    line-height: 1.7; /* Más espacio para mejor lectura */
+    line-height: 1.6;
 }
 
 b, 
@@ -113,51 +110,42 @@ strong {
 }
 
 .section {
-    padding: 8rem 0; /* Más padding para secciones */
+    padding: 6rem 0;
 }
-
-/* BUTTON */
 
 .custom-btn {
     background: var(--primary-color);
-    border-radius: 4px; /* Bordes más suaves */
-    padding: 12px 28px; /* Botones más amplios */
+    border-radius: var(--border-radius-small);
+    padding: 10px 20px;
     color: var(--white-color);
     font-size: var(--menu-font-size);
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     white-space: nowrap;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 .custom-btn:hover {
-    background: var(--secondary-color); /* Cambia al color secundario */
-    color: var(--white-color);
-    transform: translateY(-2px); /* Efecto de elevación */
+    background: var(--secondary-color);
+    color: var(--dark-color);
+    transform: translateY(-1px);
 }
 
 .custom-btn:focus {
-    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.3); /* Resplandor al enfocar */
+    box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.3);
 }
 
 .custom-btn.bordered {
     background: transparent;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     color: var(--primary-color);
-    box-shadow: none;
 }
 
 .custom-btn.bordered:hover {
     background: var(--primary-color);
     color: var(--white-color);
-    border-color: var(--primary-color);
 }
-
-/*---------------------------------------
-   GENERAL               
------------------------------------------*/
 
 * {
     box-sizing: border-box;
@@ -165,7 +153,7 @@ strong {
 
 a {
     color: var(--link-color);
-    font-weight: var(--font-weight-normal);
+    font-weight: normal;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -176,8 +164,6 @@ a:focus {
     color: var(--primary-color);
 }
 
-/* BG OVERLAY */
-
 .bg-overlay {
     background: var(--dark-color);
     position: absolute;
@@ -187,39 +173,27 @@ a:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.7; /* Menos opacidad para más visibilidad */
+    opacity: 0.75;
 }
-
-/*---------------------------------------
-   MODAL              
------------------------------------------*/
 
 .modal-content {
-    padding: 2.5rem 3.5rem;
-    border-radius: 8px; /* Bordes más redondeados */
+    padding: 2rem;
+    border-radius: 6px;
 }
-
-/*---------------------------------------
-   FEATURE          
------------------------------------------*/
 
 .feature {
-    background: var(--secondary-color); /* Color secundario para contraste */
-    padding: 6rem 0;
+    background: var(--dark-color);
+    padding: 5rem 0;
 }
 
-/*---------------------------------------
-   MENU             
------------------------------------------*/
-
 .navbar {
-    background: linear-gradient(180deg, var(--dark-color), var(--secondary-color)); /* Degradado moderno */
-    padding: 1.5rem;
+    background: var(--dark-color);
+    padding: 0.8rem;
 }
 
 .navbar-brand {
     color: var(--white-color);
-    font-size: var(--h3-font-size);
+    font-size: var(--h4-font-size);
     font-weight: var(--font-weight-bold);
 }
 
@@ -228,69 +202,57 @@ a:focus {
     font-size: var(--menu-font-size);
     font-weight: var(--font-weight-normal);
     text-transform: uppercase;
-    padding: 4px 10px;
+    padding: 2px 8px;
 }
 
 .nav-item .nav-link.active,
 .nav-item .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .navbar-toggler .navbar-toggler-icon {
     background: var(--primary-color);
-    width: 35px;
-    height: 3px;
+    width: 28px;
+    height: 2px;
 }
 
 .navbar-toggler .navbar-toggler-icon::before,
 .navbar-toggler .navbar-toggler-icon::after {
     background: var(--primary-color);
-    width: 35px;
-    height: 3px;
+    width: 28px;
+    height: 2px;
 }
-
-/*---------------------------------------
-   HERO              
------------------------------------------*/
 
 .hero {
     background-image: url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 90vh;
     position: relative;
 }
 
-/*---------------------------------------
-   CLASS               
------------------------------------------*/
-
 .class-info {
     background: var(--white-color);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más suave */
-    border-radius: 4px;
-    padding: 1.5rem 2.5rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    border-radius: var(--border-radius-small);
+    padding: 1rem 1.5rem;
 }
 
 .class-info img {
-    border-radius: 4px 4px 0 0;
+    border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
 }
 
 .class-price {
-    background: var(--secondary-color); /* Color secundario */
-    border-radius: 50%;
-    color: var(--white-color);
+    background: var(--secondary-color);
+    border-radius: var(--border-radius-large);
+    color: var(--dark-color);
     font-weight: var(--font-weight-bold);
-    width: 4rem;
-    height: 4rem;
-    line-height: 4rem;
-    top: 1.5rem;
-    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    top: 1rem;
+    right: 1rem;
 }
-
-/*---------------------------------------
-   SCHEDULE             
------------------------------------------*/
 
 .schedule {
     background: var(--dark-color);
@@ -311,75 +273,56 @@ a:focus {
     color: var(--white-color);
 }
 
-/*---------------------------------------
-   ABOUT & TEAM            
------------------------------------------*/
-
 .about {
     background: var(--about-bg-color);
 }
 
 .team-info {
     background: var(--white-color);
-    border-radius: 4px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 25px;
+    border-radius: var(--border-radius-small);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    padding: 15px;
 }
 
-/*---------------------------------------
-   CONTACT              
------------------------------------------*/
-
 .form-control {
-    border-radius: 4px;
-    margin: 1.5rem 0;
+    border-radius: var(--border-radius-small);
+    margin: 1rem 0;
 }
 
 button#submit-button {
     background: var(--primary-color);
-    border-radius: 4px;
+    border-radius: var(--border-radius-small);
     color: var(--white-color);
     font-weight: var(--font-weight-bold);
 }
 
 button#submit-button:hover {
     background: var(--secondary-color);
+    color: var(--dark-color);
 }
-
-/*---------------------------------------
-   FOOTER              
------------------------------------------*/
 
 .site-footer {
-    border-top: 1px solid #e5e7eb;
-    padding: 4rem 0;
+    border-top: 1px solid #e0e0e0;
+    padding: 2.5rem 0;
 }
-
-/*---------------------------------------
-   SOCIAL ICON              
------------------------------------------*/
 
 .social-icon li a {
     color: var(--p-color);
-    font-size: 20px; /* Iconos más grandes */
-    margin: 8px 12px;
+    font-size: 18px;
+    margin: 5px 10px;
 }
 
 .social-icon li a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
-
-/*---------------------------------------
-   RESPONSIVE STYLES              
------------------------------------------*/
 
 @media screen and (max-width: 992px) {
     .section {
-        padding: 6rem 0;
+        padding: 4rem 0;
     }
 
     .nav-item .nav-link {
-        padding: 8px;
+        padding: 5px;
     }
 
     .modal-content {
@@ -389,14 +332,14 @@ button#submit-button:hover {
 
 @media screen and (max-width: 767px) {
     h1 {
-        font-size: 42px;
+        font-size: 36px;
     }
 
     h2 {
-        font-size: 34px;
+        font-size: 28px;
     }
 
     .section {
-        padding: 4rem 0;
+        padding: 3rem 0;
     }
 }
