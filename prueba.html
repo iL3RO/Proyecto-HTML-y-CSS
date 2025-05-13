@@ -1,57 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>GYMBROJoselito - Horarios semanales</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="description" content="Lista de favoritos">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/tooplate-gymso-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción - GYMBROJoselito</title>
+    <link rel="stylesheet" href="tooplate-gymso-style.css">
 </head>
 <body>
-
-    <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <header class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">GYMBROJoselito</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Pizza</a></li>
-                    <li class="nav-item"><a href="clases.html" class="nav-link">Sushi</a></li>
-                    <li class="nav-item"><a href="horarios.html" class="nav-link">Helado</a></li>
-                </ul>
-                <ul class="social-icon ml-lg-3">
-                    <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                    <li><a href="#" class="fa fa-instagram"></a></li>
-                </ul>
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">GYMBROJoselito</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="clases.html">Clases</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="horarios.html">Horarios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Encabezado visible que pone mi pagina web y una lista ordenadas con 3 elementos que sean pizza sushi y helado -->
-    <h2>Lista de favoritos</h2>
-        <p>Pizza</p>
-        <p>Sushi</p>
-        <p>Helado</p>
-              
-    <!-- Una imagen de la wikipedia que actue como un enlace a la pagina de la wikipedia -->
-    <ul class="social-icon ml-lg-3">
-                    <li><a href="https://https://es.wikipedia.org/wiki/Wikipedia:Portada" class="wikipedia"></a></li>
-                  <p>Este es un ejemplo de parrafo para mostrar conetenido e una página web</p>
-                </ul>       
-    
-    <div class="container"</div>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h2>GYMBROJoselito</h2>
+                    <h3>Lista de favoritos</h3>
+                    <ol>
+                        <li>Pizza</li>
+                        <li>Sushi</li>
+                        <li>Helado</li>
+                    </ol>
+                    <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Wikipedia-logo-v2-es.svg/200px-Wikipedia-logo-v2-es.svg.png" alt="Logo de Wikipedia" style="max-width: 200px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-          <!-- HORARIOS -->
     <section class="schedule section" id="schedule">
         <div class="container">
             <div class="row">
@@ -87,9 +92,30 @@
         </div>
     </section>
 
-                
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p>Copyright © 2025 GymBro Joselito. Diseño: Joselito Designs</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 text-lg-right">
+                    <p><a href="mailto:[email protected]">[email protected]</a></p>
+                    <p>955-123-456</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
     
-    <!-- FOOTER -->
+    <!-- Un formulario con campo de texto para nombre, coreo, lista despegable con 2 opciones (general y especifico), casilla de verificacion y boton que envie los datos a http://172.22.200.240/resultado.php -->
+    <section class="contact section" id ="contact">
+        <div class="container">
+            <div class="row">
+                <h2 class="mb-4 pb-2" data-aos="fade-up" date-aos-delay="200">Contáctenos
+    
+    <!-- FOOTER >
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -104,7 +130,7 @@
         </div>
     </footer>
 
-    <!-- SCRIPTS -->
+    <!-- SCRIPTS >
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
@@ -112,4 +138,4 @@
     <script src="js/custom.js"></script>
 </body>
 </html>
-<!--un encabezado visible que ponga mi pagina web 
+
